@@ -1,3 +1,8 @@
-button {
-    background-color: green;
+@use './styles/base/reset.scss';
+@use './styles/layouts/main.scss';
+@use './styles/components/button.scss';
+@use './styles/themes/active.scss' as theme;
+
+html {
+  background-color: theme.$background-color;
 }
