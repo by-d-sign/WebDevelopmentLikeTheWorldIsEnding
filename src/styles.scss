@@ -1,8 +1,7 @@
-@use './styles/base/reset.scss';
+@use './styles/base/base.scss';
 @use './styles/layouts/main.scss';
 @use './styles/components/button.scss';
-@use './styles/themes/active.scss' as theme;
 
-html {
-  background-color: theme.$background-color;
-}
+
+//animation
+@use './styles/components/earth.scss';

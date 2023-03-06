@@ -1,0 +1,48 @@
+.earth{
+    position: absolute;
+    top: 60vh;
+    left: calc(50% - 2.5rem);
+    width: 5rem;
+    height: 5rem;
+
+    & img {
+        width: 5rem;
+        height: 5rem;
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes comet-movement {
+    0% {
+        transform: translate(0,0);
+    }
+    80% {
+        transform: translate(0, 10rem);
+    }
+    100% {
+        transform: translate(8rem, 12rem);
+    }
+}
+
+.comet{
+    animation: comet-movement 2s linear 0s 1 forwards ;
+    position: relative;
+    top: -2rem;
+    left: calc(50% - 5rem);
+    height: 5rem;
+    width: 5rem;
+
+    & img {
+        transform: rotate(-33deg);
+    }
+}
+
+.sun {
+    position: relative;
+    top: 0;
+    left: calc(50% - 2.5rem);
+    height: 5rem;
+    width: 5rem;
+    clip-path: circle(2.5rem);
+    background: radial-gradient(yellow, orange, red);
+}
